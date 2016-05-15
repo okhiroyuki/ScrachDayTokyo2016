@@ -19,7 +19,8 @@ void setup() {
   soundfile[5] = "drum1_tom2.mp3";
   soundfile[6] = "drum1_tom3.mp3";
   soundfile[7] = "drum2_snare.mp3";
-
+  
+  println(Serial.list());
   String portName = Serial.list()[1];
   myPort = new Serial(this, portName, 9600);
   minim = new Minim(this);
