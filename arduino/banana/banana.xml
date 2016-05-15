@@ -1,0 +1,60 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mpr121_begin" id="1" x="38" y="638">
+    <next>
+      <block type="controls_for" id="2" inline="true">
+        <field name="VAR">i</field>
+        <value name="FROM">
+          <block type="math_number" id="3">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="math_number" id="4">
+            <field name="NUM">3</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="controls_if" id="5" inline="false">
+            <value name="IF0">
+              <block type="mpr121_touched" id="6" inline="true">
+                <value name="CH">
+                  <block type="variables_get" id="7">
+                    <field name="TYPE">Number</field>
+                    <field name="VAR">i</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="serial_print" id="8" inline="false">
+                <value name="CONTENT">
+                  <block type="variables_get" id="9">
+                    <field name="TYPE">Number</field>
+                    <field name="VAR">i</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_flow_statements" id="10">
+                    <field name="FLOW">BREAK</field>
+                  </block>
+                </next>
+              </block>
+            </statement>
+          </block>
+        </statement>
+        <next>
+          <block type="delay_custom" id="11" inline="false">
+            <value name="DELAY_TIME">
+              <block type="math_number" id="12">
+                <field name="NUM">10</field>
+              </block>
+            </value>
+            <next>
+              <block type="mpr121_reset" id="13"></block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
