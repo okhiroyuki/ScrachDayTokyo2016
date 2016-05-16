@@ -15,10 +15,10 @@ void setup() {
   soundfile[1] = "drum1_snare.mp3";
   soundfile[2] = "drum1_tom1.mp3";
   soundfile[3] = "drum1_bassdrum1.mp3";
-  soundfile[4] = "drum2_hat.mp3";
-  soundfile[5] = "drum1_tom2.mp3";
-  soundfile[6] = "drum1_tom3.mp3";
-  soundfile[7] = "drum2_snare.mp3";
+  //soundfile[4] = "drum2_hat.mp3";
+  //soundfile[5] = "drum1_tom2.mp3";
+  //soundfile[6] = "drum1_tom3.mp3";
+  //soundfile[7] = "drum2_snare.mp3";
   
   println(Serial.list());
   String portName = Serial.list()[1];

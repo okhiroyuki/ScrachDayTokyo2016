@@ -1,0 +1,130 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="rgbled_begin" id="73" x="38" y="13">
+    <field name="NUM">16</field>
+    <field name="PIN">12</field>
+    <field name="BRIGHTNESS">50</field>
+    <next>
+      <block type="rgbled_setpixelcolor2" id="83" inline="true">
+        <field name="RGB">#00ff00</field>
+        <value name="TARGET">
+          <block type="math_number" id="84">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="rgbled_setpixelcolor2" id="94" inline="true">
+            <field name="RGB">#ff0000</field>
+            <value name="TARGET">
+              <block type="math_number" id="95">
+                <field name="NUM">1</field>
+              </block>
+            </value>
+            <next>
+              <block type="rgbled_setpixelcolor2" id="96" inline="true">
+                <field name="RGB">#00ff00</field>
+                <value name="TARGET">
+                  <block type="math_number" id="97">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="rgbled_setpixelcolor2" id="98" inline="true">
+                    <field name="RGB">#ff0000</field>
+                    <value name="TARGET">
+                      <block type="math_number" id="99">
+                        <field name="NUM">3</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="rgbled_setpixelcolor2" id="100" inline="true">
+                        <field name="RGB">#00ff00</field>
+                        <value name="TARGET">
+                          <block type="math_number" id="101">
+                            <field name="NUM">4</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="rgbled_setpixelcolor2" id="102" inline="true">
+                            <field name="RGB">#ff0000</field>
+                            <value name="TARGET">
+                              <block type="math_number" id="103">
+                                <field name="NUM">5</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="rgbled_setpixelcolor2" id="104" inline="true">
+                                <field name="RGB">#00ff00</field>
+                                <value name="TARGET">
+                                  <block type="math_number" id="105">
+                                    <field name="NUM">6</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="rgbled_setpixelcolor2" id="106" inline="true">
+                                    <field name="RGB">#ff0000</field>
+                                    <value name="TARGET">
+                                      <block type="math_number" id="107">
+                                        <field name="NUM">7</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="rgbled_setpixelcolor2" id="108" inline="true">
+                                        <field name="RGB">#00ff00</field>
+                                        <value name="TARGET">
+                                          <block type="math_number" id="109">
+                                            <field name="NUM">8</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="rgbled_setpixelcolor2" id="110" inline="true">
+                                            <field name="RGB">#ff0000</field>
+                                            <value name="TARGET">
+                                              <block type="math_number" id="111">
+                                                <field name="NUM">9</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="rgbled_setpixelcolor2" id="114" inline="true">
+                                                <field name="RGB">#00ff00</field>
+                                                <value name="TARGET">
+                                                  <block type="math_number" id="115">
+                                                    <field name="NUM">10</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="rgbled_setpixelcolor2" id="112" inline="true">
+                                                    <field name="RGB">#ff0000</field>
+                                                    <value name="TARGET">
+                                                      <block type="math_number" id="113">
+                                                        <field name="NUM">11</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="rgbled_show" id="125"></block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,177 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="rgbled_begin" id="1" x="63" y="51">
+    <field name="NUM">16</field>
+    <field name="PIN">12</field>
+    <field name="BRIGHTNESS">50</field>
+    <next>
+      <block type="controls_for" id="2" inline="true">
+        <field name="VAR">i</field>
+        <value name="FROM">
+          <block type="math_number" id="3">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="TO">
+          <block type="math_number" id="4">
+            <field name="NUM">12</field>
+          </block>
+        </value>
+        <statement name="DO">
+          <block type="rgbled_setpixelcolor2" id="5" inline="true">
+            <field name="RGB">#ff6666</field>
+            <value name="TARGET">
+              <block type="variables_get" id="6">
+                <field name="TYPE">Number</field>
+                <field name="VAR">i</field>
+              </block>
+            </value>
+            <next>
+              <block type="rgbled_show" id="7">
+                <next>
+                  <block type="delay" id="8">
+                    <field name="DELAY_TIME">100</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_for" id="9" inline="true">
+            <field name="VAR">i</field>
+            <value name="FROM">
+              <block type="math_number" id="10">
+                <field name="NUM">12</field>
+              </block>
+            </value>
+            <value name="TO">
+              <block type="math_number" id="11">
+                <field name="NUM">0</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="rgbled_setpixelcolor2" id="12" inline="true">
+                <field name="RGB">#ff0000</field>
+                <value name="TARGET">
+                  <block type="variables_get" id="13">
+                    <field name="TYPE">Number</field>
+                    <field name="VAR">i</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="rgbled_show" id="14">
+                    <next>
+                      <block type="delay" id="15">
+                        <field name="DELAY_TIME">100</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_for" id="16" inline="true">
+                <field name="VAR">i</field>
+                <value name="FROM">
+                  <block type="math_number" id="17">
+                    <field name="NUM">6</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_number" id="18">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="rgbled_setpixelcolor2" id="19" inline="true">
+                    <field name="RGB">#3366ff</field>
+                    <value name="TARGET">
+                      <block type="math_arithmetic" id="20" inline="true">
+                        <field name="OP">MULTIPLY</field>
+                        <value name="A">
+                          <block type="variables_get" id="21">
+                            <field name="TYPE">Number</field>
+                            <field name="VAR">i</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="22">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="rgbled_show" id="23">
+                        <next>
+                          <block type="delay" id="24">
+                            <field name="DELAY_TIME">100</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_for" id="25" inline="true">
+                    <field name="VAR">i</field>
+                    <value name="FROM">
+                      <block type="math_number" id="26">
+                        <field name="NUM">0</field>
+                      </block>
+                    </value>
+                    <value name="TO">
+                      <block type="math_number" id="27">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                    <statement name="DO">
+                      <block type="rgbled_setpixelcolor2" id="28" inline="true">
+                        <field name="RGB">#ffff99</field>
+                        <value name="TARGET">
+                          <block type="math_arithmetic" id="29" inline="true">
+                            <field name="OP">ADD</field>
+                            <value name="A">
+                              <block type="math_arithmetic" id="30" inline="true">
+                                <field name="OP">MULTIPLY</field>
+                                <value name="A">
+                                  <block type="variables_get" id="31">
+                                    <field name="TYPE">Number</field>
+                                    <field name="VAR">i</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="32">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_number" id="33">
+                                <field name="NUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="rgbled_show" id="34">
+                            <next>
+                              <block type="delay" id="35">
+                                <field name="DELAY_TIME">100</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
