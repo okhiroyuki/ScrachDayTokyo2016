@@ -10,7 +10,7 @@ int val;
 String [] soundfile = new String[8];
  
 void setup() {
-  size(800, 400, P3D);
+  size(2048, 1024, P3D);
   soundfile[0] = "drum1_cymbal.mp3";
   soundfile[1] = "drum1_snare.mp3";
   soundfile[2] = "drum1_tom1.mp3";
@@ -20,11 +20,11 @@ void setup() {
   //soundfile[6] = "drum1_tom3.mp3";
   //soundfile[7] = "drum2_snare.mp3";
   
-  println(Serial.list());
-  String portName = Serial.list()[1];
+  //println(Serial.list());
+  String portName = Serial.list()[3];
   myPort = new Serial(this, portName, 9600);
   minim = new Minim(this);
-  player = minim.loadFile(soundfile[int(random(7))], 2048);
+  player = minim.loadFile(soundfile[int(random(4))], 2048);
 }
  
 void draw() {
@@ -45,13 +45,11 @@ void draw() {
 }
  
 void serialEvent(Serial p) {
-  if(p.available() > 1) {
     val = p.read();
     //println(val);
-  }
   //if(val > 0 && player.isPlaying() == false){
   if(val > 0){
-    player = minim.loadFile(soundfile[val-47], 2048);
+    player = minim.loadFile(soundfile[val-48], 2048);
     player.rewind();
     player.play();
   }
